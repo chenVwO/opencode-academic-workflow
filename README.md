@@ -7,7 +7,7 @@
 [![Windows](https://img.shields.io/badge/platform-Windows-0078d4)]()
 [![中文](https://img.shields.io/badge/lang-中文-red)](README_EN.md)
 
-> 将 [claude-code-my-workflow](https://github.com/pedrosantanna/claude-code-my-workflow) (v1.8.0) 移植至 **OpenCode**，完整适配 **Windows** 环境。
+> 基于 [claude-code-my-workflow](https://github.com/pedrosantanna/claude-code-my-workflow) (v1.8.0) 改造适配 **OpenCode**， **Windows** 环境。
 
 **AI 辅助学术工作流模板** — 专为学术写作、论文撰写、课件制作、数据分析设计。fork 即用，内置 30 个技能、14 个专业 Agent、24 条规则，以及一个自动管控审查-编译-验证循环的 TypeScript 插件。源自 Emory 大学博士课程（6 套课件，800+ 页幻灯片）。
 
