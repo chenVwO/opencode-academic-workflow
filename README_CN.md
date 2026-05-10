@@ -1,4 +1,4 @@
-# opencode-academic-workflow
+# OpenCode 学术工作流：AI 辅助写论文、做课件、数据分析
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v0.1.0-informational)](CHANGELOG.md)
@@ -9,7 +9,9 @@
 
 > 将 [claude-code-my-workflow](https://github.com/pedrosantanna/claude-code-my-workflow) (v1.8.0) 移植至 **OpenCode**，完整适配 **Windows** 环境。
 
-**AI 辅助学术工作流模板** — fork 即用，内置 30 个技能、14 个专业 Agent、24 条规则，以及一个自动管控审查-编译-验证循环的 TypeScript 插件。源自 Emory 大学博士课程（6 套课件，800+ 页幻灯片），现移植到 OpenCode。
+**AI 辅助学术工作流模板** — 专为学术写作、论文撰写、课件制作、数据分析设计。fork 即用，内置 30 个技能、14 个专业 Agent、24 条规则，以及一个自动管控审查-编译-验证循环的 TypeScript 插件。源自 Emory 大学博士课程（6 套课件，800+ 页幻灯片）。
+
+适用于：**写论文** · **结课论文** · **毕业论文** · **学术论文** · **文献综述** · **LaTeX 论文** · **Quarto 论文** · **R 语言数据分析** · **Beamer 课件** · **可复现研究** · **论文润色** · **论文审稿**
 
 [English](README.md) | [中文](#)
 
@@ -17,6 +19,7 @@
 
 ## 目录
 
+- [适用人群](#适用人群)
 - [快速开始](#快速开始)
 - [包含组件](#包含组件)
 - [工作原理](#工作原理)
@@ -26,6 +29,18 @@
 - [许可证](#许可证)
 
 ---
+
+## 适用人群
+
+| 身份 | 场景 | 推荐技能 |
+|------|------|---------|
+| **本科生 / 硕士生** | 结课论文、课程报告、毕业论文 | `/create-lecture` `/data-analysis` `/lit-review` `/proofread` |
+| **博士生** | 学术论文、开题报告、博士论文 | `/review-paper --peer` `/seven-pass-review` `/preregister` `/verify-claims` |
+| **教师 / 讲师** | 课件制作、学术演示、备课 | `/slide-excellence` `/pedagogy-review` `/translate-to-quarto` `/deploy` |
+| **研究人员** | 文献综述、数据分析、可复现研究 | `/lit-review` `/data-analysis` `/audit-reproducibility` `/review-r` |
+| **学生（通用）** | LaTeX 论文排版、参考文献管理、论文润色 | `/compile-latex` `/validate-bib` `/proofread` `/visual-audit` |
+
+> 无论你在写**结课论文**、准备**毕业论文**、制作**学术 PPT**，还是跑**R 语言数据分析**，这个模板都能让 AI 帮你完成整套流程。
 
 ## 快速开始
 
@@ -160,14 +175,15 @@ OpenCode 调用相应的技能（skill）
 
 ## 适用场景
 
-| 任务 | 如何使用 |
-|------|---------|
-| 课件幻灯片（Beamer/Quarto） | 创建、转换、多 Agent 审查、部署 |
-| 研究论文 | 文献综述、稿件审查、模拟同行评审 |
-| 数据分析 | 端到端 R 流程，发表级输出 |
-| 可复现研究包 | AEA 合规打包，可复现性审计 |
-| 学术演示 | 视觉审计、教学审查、认知负荷检验 |
-| 研究提案 | 结构化起草 + 对抗性批判 |
+| 任务 | 如何使用 | 关键词 |
+|------|---------|--------|
+| **写论文 / 结课论文 / 毕业论文** | 文献综述 → 数据分析 → 稿件撰写 → 模拟审稿 → 论文润色，全流程 AI 辅助 | `结课论文` `毕业论文` `学术论文` `论文写作` |
+| **论文审稿与润色** | 模拟同行评审（编辑 + 2 位匿名审稿人 + 综合决策），校阅语法/拼写/排版 | `论文审稿` `论文润色` `论文修改` |
+| **文献综述** | 结构化文献检索、主题聚类、研究空白识别 | `文献综述` `参考文献` |
+| **课件幻灯片（Beamer / Quarto）** | 创建、格式转换、多 Agent 审查、一键部署 | `Beamer` `Quarto` `PPT` `幻灯片` |
+| **数据分析（R 语言）** | 端到端 R 流程，数据清洗 → 建模 → 可视化 → 导出，发表级输出 | `R语言` `数据分析` `回归分析` |
+| **可复现研究** | 论文与代码交叉验证，数值一致性审计，AEA 合规打包 | `可复现性` `AEA` `研究审计` |
+| **LaTeX 论文排版** | 3-pass XeLaTeX 编译、参考文献自动核验、TikZ 图表制作 | `LaTeX` `XeLaTeX` `TikZ` `排版` |
 
 ---
 
