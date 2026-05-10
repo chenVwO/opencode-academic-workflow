@@ -5,7 +5,7 @@
 [![Skills](https://img.shields.io/badge/skills-30-6f42c1)](.opencode/skills/)
 [![Agents](https://img.shields.io/badge/agents-14-0366d6)](.opencode/agents/)
 [![Windows](https://img.shields.io/badge/platform-Windows-0078d4)]()
-[![中文](https://img.shields.io/badge/lang-中文-red)](README_CN.md)
+[![中文](https://img.shields.io/badge/lang-中文-red)](README_EN.md)
 
 > 将 [claude-code-my-workflow](https://github.com/pedrosantanna/claude-code-my-workflow) (v1.8.0) 移植至 **OpenCode**，完整适配 **Windows** 环境。
 
@@ -209,7 +209,7 @@ opencode-academic-workflow/
 ├── templates/                 ← 会话日志、质量报告等模板
 ├── explorations/              ← 研究沙箱（快速通道：60 分阈值）
 ├── Bibliography_base.bib      ← 集中式参考文献库
-├── README.md / README_CN.md
+├── README.md / README_EN.md
 ├── MEMORY.md / CHANGELOG.md
 └── LICENSE
 ```
