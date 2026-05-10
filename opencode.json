@@ -1,0 +1,47 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "shell": "pwsh",
+  "model": "anthropic/claude-sonnet-4-20250514",
+  "small_model": "anthropic/claude-haiku-4-20250514",
+  "instructions": [
+    ".opencode/instructions/plan-first-workflow.md",
+    ".opencode/instructions/orchestrator-protocol.md",
+    ".opencode/instructions/session-logging.md",
+    ".opencode/instructions/meta-governance.md"
+  ],
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "git *": "allow",
+      "grep *": "allow",
+      "python *": "allow",
+      "cd *": "allow",
+      "ls *": "allow",
+      "Get-ChildItem *": "allow"
+    },
+    "edit": {
+      "*": "ask",
+      "quality_reports/**": "allow"
+    },
+    "webfetch": "allow",
+    "websearch": "allow",
+    "question": "allow",
+    "external_directory": {
+      "C:\\Users\\Jack\\.local\\share\\opencode\\**": "allow"
+    }
+  },
+  "agent": {
+    "plan": {
+      "permission": {
+        "edit": "deny",
+        "bash": {
+          "*": "deny",
+          "cd *": "allow",
+          "ls *": "allow",
+          "Get-ChildItem *": "allow",
+          "grep *": "allow"
+        }
+      }
+    }
+  }
+}
